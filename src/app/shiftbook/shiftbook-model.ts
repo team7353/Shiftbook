@@ -1,12 +1,19 @@
-export class Recipe{
-    public name: string;
-    public description: string;
-    public imagePath: string;
+import { Time } from '@angular/common';
 
-    constructor(name: string, desc: string, imagePath: string){
-        this.name = name;
-        this.description = desc;
-        this.imagePath = imagePath;
+export class Report{
+
+    constructor(
+        public date: Date, 
+        public time: Time,
+        public shift: string,
+        public fault: string,
+        public solution: string,        
+        public desc: string, 
+        public brkDwnTm: number,
+        public responsible: string,
+        public addPers1: string,
+        public escPers: string,
+        public AttPath: string){
     }
 
 }

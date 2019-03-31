@@ -2,10 +2,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
     selector: 'app-shiftbook-detail',
-    templateUrl: './shiftbook.component-detail.html'
+    templateUrl: './shiftbook-detail.component.html'
 })
 
 
-export class HeaderComponent {
+export class ShiftbookDetailComponent {
 
 }
