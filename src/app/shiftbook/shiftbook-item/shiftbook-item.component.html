@@ -1,1 +1,52 @@
-<p>Shiftbook Item Component</p>
+<a href="#" 
+class="list-group-item clearfix"
+(click)="onSelect( report.fault )">
+  <div class="col-md-1 text-center border">
+    <h4 class="list-group-item-heading">
+        {{ report.date }}
+        <br>
+        {{ report.time }}
+    </h4>
+  </div>
+  <div class="col-md-1 text-center border">
+    <h4 class="list-group-item-heading">
+        {{ report.shift }} <br>Shift
+    </h4>
+  </div>
+  <div class="col-md-1 text-center border">
+    <h4 class="list-group-item-heading">
+        {{ report.line }}
+    </h4>
+  </div>
+  <div class="col-md-2 text-center border">
+    <h4 class="list-group-item-heading">
+      {{ report.fault }}
+    </h4>
+  </div>
+  <div class="col-md-3 text-center border">
+    <h4 class="list-group-item-heading">
+      {{ report.solution }}
+    </h4>
+  </div>
+  <div class="col-md-2 text-center border">
+    <h4 class="list-group-item-heading">
+      {{ report.desc }}
+    </h4>
+  </div>
+  <div class="col-md-1 text-center border">
+      <h5 class="list-group-item-heading">
+        {{ report.respons }} <br>
+        {{ report.addPers1 }} <br>
+        {{ report.escPers }}
+      </h5>
+  </div>
+
+
+  <span class="pull-right">
+    <img 
+    [src]="report.AttPath"
+    alt="Attachment"
+    class="img-responsive" 
+    style="max-height: 50px;">
+  </span>           
+</a>

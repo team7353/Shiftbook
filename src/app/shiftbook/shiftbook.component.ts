@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { Report } from './shiftbook-model';
 
 @Component({
     selector: 'app-shiftbook',
@@ -7,5 +8,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 
 export class ShiftbookComponent {
+    @Output() selectedReport: Report
 
 }

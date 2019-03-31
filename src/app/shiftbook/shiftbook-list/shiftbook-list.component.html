@@ -1,1 +1,15 @@
-<p>Shiftbook List Component</p>
+<div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-success">New Report</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-shiftbook-item  
+            *ngFor="let ReportElement of reports"
+            [report]="ReportElement"
+            (ReportSelected)="onReportSelected(ReportElement)"></app-shiftbook-item>
+        </div>
+    </div>
+    

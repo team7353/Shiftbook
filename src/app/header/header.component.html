@@ -1,18 +1,33 @@
-<div class="container" appHighlight [defaultColor]="'transparent'">
-    <div class="page-header text-center">
-        <h1>TS-R-21 Shiftbook</h1>      
-    </div>  
+<div class="container col-md-12" appHighlight [defaultColor]="'transparent'">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="page-header text-center">
+                <h1>TS-R-21 Shiftbook</h1>
+            </div>
+        </div> 
+        <div class="col-md-2">
+            <div class="pull-right">
+                <br>
+                {{ dateObj | date:'medium' }}
+                <br><br>
+                <button class="btn btn-green">Login</button>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="container col-md-12">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="#" class="navbar-brand">Shiftbook</a>
+            <a href="#" class="navbar-brand">Tools</a>
         </div>
 
         <div class="collaps navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#" (click)="onSelect('recipe')">Input</a></li>
-                <li><a href="#" (click)="onSelect('shopping-list')">Output</a></li>
+                <li><a href="#" (click)="onSelect('ShiftReport')">Shift Report</a></li>
+                <li><a href="#" (click)="onSelect('LOP')">LOP</a></li>
+                <li><a href="#" (click)="onSelect('Weekend Work')">Weekend Work</a></li>
+                <li><a href="#" (click)="onSelect('Support')">Support</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -26,3 +41,4 @@
         </div>
     </div>
 </nav>
+</div>

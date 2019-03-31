@@ -1,1 +1,8 @@
-<p>Shiftbook Component</p>
+<app-shiftbook-detail 
+    *ngIf="selectedReport; else infoText"
+    [report]="selectedReport"></app-shiftbook-detail>
+    <ng-template #infoText>
+      <p>Please select a Report!</p>
+    </ng-template>
+    
+<app-shiftbook-list (reportWasSelected)="selectedReport = $event"></app-shiftbook-list>

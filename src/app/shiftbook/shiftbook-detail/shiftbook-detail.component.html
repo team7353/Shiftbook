@@ -1,1 +1,58 @@
-<p>Shiftbook Detail Component</p>
+<div class="row">
+    <div class="col-xs-12">
+        <img 
+        src="{{ report.AttPath }}" 
+        alt="Attachment" 
+        class="img-response"
+        style="max-height:500px;">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Date: {{ report.date }}</h1>
+        <h1>Time: {{ report.time }}</h1>
+        <h1>Shift: {{ report.shift }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Line: {{ report.line }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Fault: {{ report.fault }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Solution: {{ report.solution }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Description {{ report.desc }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Responsible:   {{ report.respons }}</h1>
+        <h1>Second Person: {{ report.addPers1 }}</h1>
+        <h1>Escalated to:  {{ report.excPers }}</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle">
+            Edit Report <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">To LOP</a></li>
+                <li><a href="#">Edit Report</a></li>
+                <li><a href="#">Delete Report</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -7,6 +7,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 
 export class HeaderComponent {
+
+    dateObj: number = Date.now()
+
     @Output() featureSelected = new EventEmitter<string>()
     onSelect(feature) {
         this.featureSelected.emit(feature)
